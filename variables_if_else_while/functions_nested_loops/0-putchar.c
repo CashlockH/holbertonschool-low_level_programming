@@ -1,0 +1,11 @@
+#include <stdlib.h>
+#include <stdio.h>
+/**
+ * main - prints 0-9 in string type with , and spaces
+ * Return: 0
+ */
+int main(void)
+{
+printf("_putchar");
+return (0);
+}
