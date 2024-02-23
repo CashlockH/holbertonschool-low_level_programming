@@ -16,4 +16,5 @@ putchar(ch);
 putchar('\n');
 for (; nese != 'Z' + 1 ; nese++)
 putchar(nese);
+return (0);
 }

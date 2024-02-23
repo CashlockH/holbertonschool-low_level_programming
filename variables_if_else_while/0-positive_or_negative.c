@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * * main - random value for n
- * Return: 0 
+ ** main - random value for n
+ *Return: 0
  */
 int main(void)
 {
