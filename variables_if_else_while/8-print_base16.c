@@ -13,5 +13,6 @@ if(n == 58)
 n = n + 39;
 putchar(n);
 }
+putchar('\n');
 return(0);
 }
