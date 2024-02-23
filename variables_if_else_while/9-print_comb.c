@@ -6,13 +6,15 @@
  */
 int main(void)
 {
-for (int n = 48 ; n <= 57 ; n++)
+int n = 48;
+for (; n <= 57 ; n++)
 {
 putchar(n);
 if (n != 57)
 {
-putchar('\,');
+putchar(',');
 putchar(' ');
 }
 }
+return (0);
 }
