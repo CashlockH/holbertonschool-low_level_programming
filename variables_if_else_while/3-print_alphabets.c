@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdio.h>
 /**
  * main - squence of lovercase and uppercase letters
  * Return: 0
