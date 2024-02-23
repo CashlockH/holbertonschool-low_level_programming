@@ -9,6 +9,6 @@ int main(void)
 char n = 'z';
 for (; n >= 'a' ; n--)
 putchar(n);
- ptuchar('\n');
+putchar('\n');
 return (0);
 }
