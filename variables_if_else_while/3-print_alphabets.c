@@ -13,8 +13,8 @@ for (; ch != 'z' + 1 ; ch++)
 {
 putchar(ch);
 }
-putchar('\n');
 for (; nese != 'Z' + 1 ; nese++)
 putchar(nese);
+putchar('\n');
 return (0);
 }
