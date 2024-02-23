@@ -12,4 +12,5 @@ for (; i <= 9 ; i++)
 putchar('0' + i);
 }
 putchar('\n');
+return (0);
 }
