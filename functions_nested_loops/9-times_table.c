@@ -42,7 +42,6 @@ _putchar(' ');
 }
 print_number(product);
 }
-_putchar('$');
 _putchar('\n');
 }
 }
