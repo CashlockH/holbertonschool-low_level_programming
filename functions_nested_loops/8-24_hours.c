@@ -20,19 +20,10 @@ for (; f <= 5; f++)
 d = 0;
 for (; d <= 9; d++)
 {
-b = 0;
-for (; b <= 5 ; b++)
-{
-i = 0;
-for (; i <= 9 ; i++)
-{
 _putchar(hour[0]);
 _putchar(hour[1] + g);
 _putchar(':');
 _putchar(minute[0] + f);
 _putchar(minute[1] + d);
-_putchar(':');
-_putchar(second[0] + b);
-_putchar(second[1] + i);
 _putchar('\n');
-}}}}}}}
+}}}}}
