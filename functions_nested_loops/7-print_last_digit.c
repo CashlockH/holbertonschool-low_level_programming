@@ -6,5 +6,7 @@
  */
 int print_last_digit(int num)
 {
+int nese = num % 10;
+_putchar(nese + '0');
 return (num % 10);
 }
