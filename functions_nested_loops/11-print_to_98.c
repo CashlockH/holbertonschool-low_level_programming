@@ -19,4 +19,3 @@ printf("%d, ", n);
 }
 printf("%d\n", 98);
 }
-return (0);
