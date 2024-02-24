@@ -13,7 +13,6 @@ print_number(n / 10);
 n %= 10;
 }
 _putchar(n + '0');
-return (0);
 }
 /**
  *times_table - writes the character c to stdout
