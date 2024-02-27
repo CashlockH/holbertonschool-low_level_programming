@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_square - writes the character c to stdout
  * @size: one size of the square

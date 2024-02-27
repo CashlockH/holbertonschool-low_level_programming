@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_numbers - writes the character c to stdout
  * Return: nothing.

@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_diagonal - writes the character c to stdout
  * @n: The number of characters to print

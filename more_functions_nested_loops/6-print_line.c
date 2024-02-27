@@ -1,4 +1,5 @@
-y/**
+#include "main.h"
+/**
  * print_line - writes the character c to stdout
  * @n: The number of characters to print
  * Return: On success 1.

@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * main - writes the character c to stdout
  * Return: nothing

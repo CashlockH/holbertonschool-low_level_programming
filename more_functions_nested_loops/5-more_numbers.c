@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * more_numbers - writes the character c to stdout
  *
