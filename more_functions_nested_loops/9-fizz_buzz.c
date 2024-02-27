@@ -4,7 +4,7 @@
  * Return: nothing
  * On error, -1 is returned, and errno is set appropriately.
  */
-void main(void)
+int main(void)
 {
 int i = 1;
 for (; i <= 100; i++)
@@ -19,4 +19,5 @@ else
 printf("%d ", i);
 }
 printf("\n");
+return (0);
 }
