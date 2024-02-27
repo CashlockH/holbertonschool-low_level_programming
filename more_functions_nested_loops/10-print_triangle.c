@@ -10,17 +10,16 @@ void print_triangle(int size)
 {
 int i = 1;
 int j = 1;
-if (size < 0)
-size = 0;
 while (i != size + 1)
 {
 j = 0;
-for (; j <= size - i; j++)
+for (; j <= size - i - 1; j++)
 _putchar(' ');
-for (; j <= size; j++)
+for (; j <= size - 1; j++)
 _putchar(35);
 _putchar('\n');
 i++;
 }
+if(size <= 0)
 _putchar('\n');
 }
