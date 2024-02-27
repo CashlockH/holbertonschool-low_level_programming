@@ -8,7 +8,12 @@
 void more_numbers(void)
 {
 int i = 0;
+int j = 0;
 char a[] = "01";
+while (j != 10)
+{
+i = 0;
+a[0] = '0';
 while (i != 13)
 {
 if (i == 9)
@@ -22,4 +27,6 @@ _putchar(a[0]);
 i++;
 }
 _putchar('\n');
+j++;
+}
 }
