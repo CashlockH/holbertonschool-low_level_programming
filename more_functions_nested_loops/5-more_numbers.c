@@ -8,7 +8,6 @@
 void more_numbers(void)
 {
 int i = 0;
-int j = 0;
 char a[] = "01";
 while (i != 13)
 {
