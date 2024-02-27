@@ -22,8 +22,8 @@ if (i >= 9)
 {
 _putchar(a[1]);
 }
-a[0] = a[0] + 1;
 _putchar(a[0]);
+a[0] = a[0] + 1;
 i++;
 }
 _putchar('\n');
