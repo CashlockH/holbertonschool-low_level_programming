@@ -7,22 +7,20 @@
  */
 void more_numbers(void)
 {
-char a[] = "00";
 int i = 0;
-for (; i < 13; i++)
+int j = 0;
+char a[] = "01";
+while (i != 13)
 {
+if (i == 9)
+a[0] = '0';
 if (i >= 9)
 {
-a[0] = '1';
-_putchar(a[0]);
-a[1] = a[1] + 1;
 _putchar(a[1]);
 }
-else
-{
 a[0] = a[0] + 1;
 _putchar(a[0]);
-}
+i++;
 }
 _putchar('\n');
 }
