@@ -14,11 +14,11 @@ while (j != 10)
 {
 i = 0;
 a[0] = '0';
-while (i != 14)
+while (i != 15)
 {
-if (i == 9)
+if (i == 10)
 a[0] = '0';
-if (i >= 9)
+if (i > 9)
 {
 _putchar(a[1]);
 }
