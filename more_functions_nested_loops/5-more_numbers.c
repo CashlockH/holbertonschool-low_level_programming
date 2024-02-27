@@ -9,7 +9,6 @@ void more_numbers(void)
 {
 char a[] = "00";
 int i = 0;
-int j = 0;
 for (; i < 13; i++)
 {
 if (i >= 9)
