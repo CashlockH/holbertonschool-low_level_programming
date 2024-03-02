@@ -17,4 +17,6 @@ printf("%d, ", a[i]);
 else
 printf("%d\n", a[i]);
 }
+if (n <= 0)
+printf("\n");
 }
