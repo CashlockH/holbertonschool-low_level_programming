@@ -18,7 +18,7 @@ i++;
 }
 c = i / 2;
 i--;
-while (i != c)
+while (i >= c)
 {
 t = s[j];
 s[j] = s[i];
