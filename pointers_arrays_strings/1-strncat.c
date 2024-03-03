@@ -1,18 +1,19 @@
 #include "main.h"
 /**
- * _strcat - writes the character c to stdout
+ * _strncat - writes the character c to stdout
  * @dest: The character to print
- * @src: The string to be copied to the end of the dest
+ * @src: The string
+ * @n: The number
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 int i = 0;
 int j = 0;
 while (dest[i] != '\0')
 i++;
-while (src[j] != '\0')
+while (src[j] != '\0' && j < n)
 {
 dest[i] = src[j];
 i++;
