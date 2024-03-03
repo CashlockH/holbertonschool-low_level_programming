@@ -20,7 +20,7 @@ j++;
 }
 if (src[j] == '\0')
 {
-while (j < i)
+while (j < n)
 {
 dest[j] = '\0';
 j++;
