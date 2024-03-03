@@ -1,0 +1,21 @@
+#include "main.h"
+/**
+ * reverse_array - writes the character c to stdout
+ * @a: The character to print
+ * @n: asdfsdfs
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+void reverse_array(int *a, int n)
+{
+int i = 0;
+int temp;
+while (i < n)
+{
+temp = a[i];
+a[i] = a[n - 1];
+a[n - 1] = temp;
+i++;
+n--;
+}
+}
