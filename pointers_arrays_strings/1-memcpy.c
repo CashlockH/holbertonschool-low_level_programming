@@ -1,0 +1,19 @@
+#include "main.h"
+/**
+ * _memcpy - copies n character from src to dest
+ * @dest: string that will be the final string
+ * @src: string of which n character will be copied
+ * @n: the number of charater to be copied
+ * Return: On success dest.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+unsigned int i = 0;
+while (i < n)
+{
+dest[i] = src[i];
+i++;
+}
+return (dest);
+}
