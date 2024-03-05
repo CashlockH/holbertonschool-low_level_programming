@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strpbrk - writes the character c to stdout
  * @s: The character to print
@@ -14,7 +15,7 @@ int n = 0;
 while (accept[i] != '\0')
 {
 j = 0;
-for (; s[j] != '\0' ; j++)
+for (; s[j] != '\0'; j++)
 {
 if (accept[i] == s[j])
 {
@@ -24,5 +25,8 @@ n = j;
 }
 i++;
 }
+if (n == 0)
+return (NULL);
+else
 return (s + n);
 }
