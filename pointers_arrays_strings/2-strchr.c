@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr - makes the string starts from the first occurance of character c
  * @c: The character that is given as an input
@@ -19,6 +20,11 @@ return (b);
 }
 i++;
 }
+if (c == '\0')
+{
 b = (s + i);
 return (b);
+}
+else
+return (NULL);
 }
