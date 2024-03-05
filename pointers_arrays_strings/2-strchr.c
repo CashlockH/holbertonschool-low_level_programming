@@ -1,7 +1,6 @@
 #include "main.h"
-#include <stddef.h>
 /**
- * _strchr - makes the string beign started from the first occurance of character c
+ * _strchr - makes the string starts from the first occurance of character c
  * @c: The character that is given as an input
  * @s: string that is given as an input
  * Return: If s string has c return new string, else NULL .
@@ -20,5 +19,6 @@ return (b);
 }
 i++;
 }
-return (NULL);
+b = (s + i);
+return (b);
 }
