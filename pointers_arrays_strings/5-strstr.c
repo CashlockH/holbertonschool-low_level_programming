@@ -12,6 +12,8 @@ char *_strstr(char *a, char *b)
 int i = 0;
 int j = 0;
 int c = 0;
+if (b == "")
+return a;
 while (b[i] != '\0')
 {
 if (c != 0)
