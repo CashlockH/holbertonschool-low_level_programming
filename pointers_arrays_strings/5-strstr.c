@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strstr - finds b as a pattern in b
  * @a: The string as a source
