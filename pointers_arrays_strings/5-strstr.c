@@ -14,7 +14,7 @@ int i = 0;
 int j = 0;
 int c = 0;
 if (strlen(b) == 0)
-return a;
+return (a);
 while (b[i] != '\0')
 {
 if (c != 0)
