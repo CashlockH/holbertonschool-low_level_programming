@@ -31,9 +31,11 @@ c = 0;
 i = 0;
 }
 }
+if (a[j] == '\0')
+break;
 i++;
 }
-if (i == c)
+if (i == c && c != 0)
 return (a + j - c + 1);
 else
 return (NULL);
