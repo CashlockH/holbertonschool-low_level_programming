@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _puts_recursion - it call the inner-scope function to initiate recursion
  * @s: this is pointer that holds the adress of string
