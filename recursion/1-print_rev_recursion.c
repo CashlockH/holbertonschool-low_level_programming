@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _print_rev_recursion - call rev_reverse function to initiate the recursion
  * @s: string pointer which should be printed
@@ -6,7 +7,7 @@
  */
 void _print_rev_recursion(char *s)
 {
-	if (s != "")
+	if (s != NULL)
 	{
 		char rev_reverse(char *b, int i);
 		rev_reverse(s, 0);
