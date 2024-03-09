@@ -17,11 +17,11 @@ int _strlen_recursion(char *s)
  */
 int strlen_recursion(char *b, int i)
 {
-	int ah;
-	if (b[i] == '\0')
-	{
-		return (i);
-	}
-	ah = strlen_recursion(b, i + 1);
-	return (ah);
+int ah;
+if (b[i] == '\0')
+{
+return (i);
+}
+ah = strlen_recursion(b, i + 1);
+return (ah);
 }
