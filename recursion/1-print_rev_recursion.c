@@ -7,7 +7,7 @@
  */
 void _print_rev_recursion(char *s)
 {
-	if (s[0] != NULL)
+	if (s[0] != 0)
 	{
 		char rev_reverse(char *b, int i);
 		rev_reverse(s, 0);
