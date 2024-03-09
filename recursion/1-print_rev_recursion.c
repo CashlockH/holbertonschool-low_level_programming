@@ -6,9 +6,12 @@
  */
 void _print_rev_recursion(char *s)
 {
-	char rev_reverse(char *b, int i);
-	rev_reverse(s, 0);
-	_putchar(s[0]);
+	if (s != "")
+	{
+		char rev_reverse(char *b, int i);
+		rev_reverse(s, 0);
+		_putchar(s[0]);
+	}
 }
 /**
  * rev_reverse - prints the reverse string
