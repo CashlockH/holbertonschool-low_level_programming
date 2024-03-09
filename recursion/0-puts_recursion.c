@@ -5,21 +5,22 @@
  */
 void _puts_recursion(char *s)
 {
-	void _nese(int i);
-	_nese(0);
+	int _nese(char*b ,int i);
+	_nese(s, 0);
 }
 /**
 * _nese - it creates recursion to print the string
 * @i: this is intefer indicates the index of string and used in recursion
-* Return: returns 0 as and exit for recursion.
+* Return: returns 0 as and exit for recursion or 1 at the end.
 */
-void _nese(int i)
+int _nese(char *b, int i)
 {
-	if (s[i] == '\0')
+	if (b[i] == '\0')
 	{
 		_putchar('\n');
 		return (0);
 	}
-	_putchar(s[i]);
-	_nese(i + 1);
+	_putchar(b[i]);
+	_nese(b, i + 1);
+	return(1);
 }
