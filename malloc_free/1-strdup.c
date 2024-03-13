@@ -9,13 +9,13 @@
 char *_strdup(char *str)
 {
 	unsigned long int i = 0;
-	char *new_str = malloc(sizeof(str));
+	char *new_str = malloc(sizeof(str) * 10);
 
 	if (new_str == NULL)
 	{
 		return (NULL);
 	}
-	while (i <= sizeof(str))
+	while (str[i] != '\0')
 	{
 		new_str[i] = str[i];
 		i++;
