@@ -10,13 +10,16 @@
 char *_strdup(char *str)
 {
 	int i = 0;
-	char *new_str = malloc(sizeof(char) * 13);
+	int length = 0;
+	char *new_str;
 
-	if (str == NULL)
+	while (str[length] != '\0')
 	{
-		return (NULL);
+		length++;
 	}
-	while (str[i] != '\0')
+	printf("%d\n", length);
+	new_str = malloc(length + 1);
+	while (i < length)
 	{
 		new_str[i] = str[i];
 		i++;
