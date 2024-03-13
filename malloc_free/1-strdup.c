@@ -17,7 +17,6 @@ char *_strdup(char *str)
 	{
 		length++;
 	}
-	printf("%d\n", length);
 	new_str = malloc(length + 1);
 	while (i < length)
 	{
