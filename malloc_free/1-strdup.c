@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
  * _strdup - it duplicates the string using malloc
  * @str: string will be copied
@@ -9,13 +10,13 @@
 char *_strdup(char *str)
 {
 	unsigned long int i = 0;
-	char *new_str = malloc(sizeof(str) * 10);
+	char *new_str = malloc(strlen(str));
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	while (str[i] != '\0')
+	while (i < strlen(str))
 	{
 		new_str[i] = str[i];
 		i++;
