@@ -7,7 +7,7 @@
  * @height: the number of columns
  * Return: the 2d array filled with zeros
  */
-int **alloc_grid(int height, int width)
+int **alloc_grid(int width, int height)
 {
 	int **block;
 	int i = 0;
