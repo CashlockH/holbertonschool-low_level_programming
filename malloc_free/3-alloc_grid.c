@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * alloc_grid - allocates memory for two dimensional array with malloc
+ * alloc_grid - allocates memory for 2d array with malloc and filled it with 0s
  * @width: the number of rows
  * @height: the number of columns
- * Return: 0
+ * Return: the 2d array filled with zeros
  */
 int **alloc_grid(int width, int height)
 {
@@ -31,5 +31,5 @@ int **alloc_grid(int width, int height)
 			block[i][j] = 0;
 		}
 	}
-	return (0);
+	return (block);
 }
