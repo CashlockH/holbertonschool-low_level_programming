@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "dog.h"
 /**
  * new_dog - function that inserts parameters to structure variable
  * @name: the name of the structer variable
