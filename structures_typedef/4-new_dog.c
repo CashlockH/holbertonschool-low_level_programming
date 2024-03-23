@@ -17,6 +17,17 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int i;
 	dog_t *nese;
 
+	while (name[i] != '\0')
+	{
+		name_length++;
+		i++;
+	}
+	i = 0;
+	while (owner[i] != '\0')
+	{
+		owner_length++;
+		i++;
+	}
 	nese = malloc(sizeof(dog_t));
 	if (nese == NULL)
 	{
