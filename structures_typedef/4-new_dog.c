@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "dog.h"
 /**
  * new_dog - function that inserts parameters to structure variable
@@ -11,8 +12,8 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	char n_name[100];
-	char n_owner[100];
+	int name_length = strlen(name) + 1;
+	int owner_length = strlen(owner) + 1;
 	int i;
 	dog_t *nese;
 
@@ -22,20 +23,30 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(nese);
 		return (NULL);
 	}
-	i = 0;
-	while (name[i] != '\0')
+	nese->name = malloc(sizeof(name_length));
+	if (nese->name == NULL)
 	{
-		n_name[i] = name[i];
+		free(nese->name);
+		return (NULL);
+	}
+	nese->owner = malloc(sizeof(owner_length));
+	if (nese->owner == NULL)
+	{
+		free(nese->owner);
+		return (NULL);
+	}
+	i = 0;
+	while (i <= owner_length)
+	{
+		nese->owner[i] = owner[i];
 		i++;
 	}
 	i = 0;
-	while (owner[i] != '\0')
+	while (i <= name_length)
 	{
-		n_owner[i] = owner[i];
+		nese->name[i] = name[i];
 		i++;
 	}
-	nese->name = n_name;
-	nese->owner = n_owner;
 	nese->age = age;
 	return (nese);
 }
