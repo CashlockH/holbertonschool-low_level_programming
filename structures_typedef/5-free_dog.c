@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include "dog.h"
 /**
  * free_dog - frees the allocated memory for the pointer to structure
  * @d: the pointer to the structure
