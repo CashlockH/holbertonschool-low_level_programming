@@ -32,19 +32,19 @@ dog_t *new_dog(char *name, float age, char *owner)
 	nese = malloc(sizeof(dog_t));
 	if (nese == NULL)
 	{
-		free(nese);
 		return (NULL);
 	}
 	nese->name = malloc(sizeof(name_length));
 	if (nese->name == NULL)
 	{
-		free(nese->name);
+		free(nese);
 		return (NULL);
 	}
 	nese->owner = malloc(sizeof(owner_length));
 	if (nese->owner == NULL)
 	{
-		free(nese->owner);
+		free(nese->dog);
+		free(nese->name);
 		return (NULL);
 	}
 	i = 0;
