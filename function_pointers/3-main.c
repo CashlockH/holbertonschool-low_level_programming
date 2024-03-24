@@ -11,30 +11,17 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, j, a, b, result;
-	char op[2];
+	int a = atoi(argv[1]);
+	char *op = argv[2];
+	int b = atoi(argv[3]);
+	int result;
 
-	for (i = 1; i < argc; i++)
+	if (argc != 4)
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
-		{
-			if (strchr("+-*/%", argv[i][j]))
-			{
-				if (argv[i][j - 1] == '\\')
-				{
-					printf("%s\n", "Error");
-					exit(99);
-				}
-				a = atoi(argv[i - 1]);
-				b = atoi(argv[i + 1]);
-				op[0] = argv[i][j];
-				op[1] = '\0';
-				result = get_op_func(op)(a, b);
-				printf("%d\n", result);
-				return (0);
-			}
-		}
+		printf("%s\n", "Error");
+		exit(98);
 	}
-	printf("%s\n", "Error");
-	exit(99);
+	result = get_op_func(op)(a, b);
+	printf("%d\n", result);
+	return (0);
 }
