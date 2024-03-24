@@ -21,10 +21,18 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 		exit(98);
 	}
-	a = atoi(argv[1]);
-	op = argv[2];
-	b = atoi(argv[3]);
-	result = get_op_func(op)(a, b);
-	printf("%d\n", result);
+	if (strchr("+-*/%", argv[2][0]))
+	{
+		a = atoi(argv[1]);
+		op = argv[2];
+		b = atoi(argv[3]);
+		result = get_op_func(op)(a, b);
+		printf("%d\n", result);
+	}
+	else
+	{
+		printf("%s\n", "Error");
+		exit(99);
+	}
 	return (0);
 }
