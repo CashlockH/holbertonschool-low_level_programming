@@ -16,7 +16,7 @@ void print_all(const char * const format, ...)
 	char *str;
 
 	va_start(ap, format);
-	for (i = 0; i < strlen(format); i++)
+	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == 'c')
 		{
