@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 		exit(98);
 	}
-	if (strchr("+-*/%", argv[2][0]))
+	if (strchr("+-*/%", argv[2][0]) && strlen(argv[2]) < 2)
 	{
 		a = atoi(argv[1]);
 		op = argv[2];
