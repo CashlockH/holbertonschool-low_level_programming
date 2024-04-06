@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "include.h"
+#include "lists.h"
 /**
  * free_list - frees the members of the list
  * @head: pointer to the first member of the list
