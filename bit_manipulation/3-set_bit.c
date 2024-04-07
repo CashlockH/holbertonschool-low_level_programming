@@ -10,7 +10,7 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	long unsigned int d = 1 << index;
+	unsigned long int d = 1 << index;
 
 	if (index >= sizeof(unsigned long int) * CHAR_BIT)
 		return (-1);
