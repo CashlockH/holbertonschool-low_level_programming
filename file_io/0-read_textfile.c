@@ -3,6 +3,12 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <stdlib.h>
+/**
+ * read_textfile - adsfsaf
+ * @filename: asdfsaf
+ * @letters: asdfsaf
+ * Return: asdfas
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buf;
