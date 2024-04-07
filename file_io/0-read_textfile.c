@@ -4,7 +4,8 @@
 #include <sys/stat.h>
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	size_t written, n, total;
+	int written, n;
+	size_t total;
 	int fd;
 	char buf[500];
 	if (filename == NULL)
