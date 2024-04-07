@@ -8,6 +8,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fd = open(filename, O_RDONLY);
 	size_t n = read(fd, buf, letters);
 	write(STDOUT_FILENO, buf, n);
-	close(fd)
+	close(fd);
 	return n;
 }
