@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 /**
  * get_bit - gets the bit at the given index
  * @n: the given decimal number
