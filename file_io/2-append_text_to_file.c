@@ -5,6 +5,7 @@
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <stddef.h>
 /**
  * append_text_to_file - afdssfsdf
  * @filename: asdfsf
