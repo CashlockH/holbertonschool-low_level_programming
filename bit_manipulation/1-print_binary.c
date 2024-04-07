@@ -3,7 +3,7 @@
 #include <limits.h>
 void print_binary(unsigned long int num)
 {
-	int d = 1 << sizeof(unsigned long int) * 5;
+	int d = 1 << 10;
 	int i = 0;
 
 	if (num == 0)
