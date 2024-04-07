@@ -10,19 +10,15 @@
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	unsigned int i = 0;
 	dlistint_t *tmp = head;
+	unsigned int i = 0;
 
-	if (head->next == NULL)
+	while (tmp->next)
 	{
-		printf("(nil)\n");
-		exit(100);
-	}
-	if (i < index)
-	{
-		tmp = get_dnodeint_at_index(head->next, index - 1);
-	}
-	else
+		tmp = tmp->next;
+		i++;
+	if (i == index)
 		return (tmp);
-	return (tmp);
+	}
+	return (NULL);
 }
