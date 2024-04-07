@@ -5,7 +5,8 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char buf[500];
-	int fd = (filename, O_RDONLY);
+	int fd = open(filename, O_RDONLY);
 	int n = read(fd, buf, letters);
-	return 0;
+	write(STDOUT_FILENO, buf, n);
+	return n;
 }
