@@ -9,9 +9,9 @@
 void print_binary(unsigned long int num)
 {
 	unsigned long int d;
-	d = 1UL << (sizeof(unsigned long int) * CHAR_BIT - 1);
 	int i = 0;
 
+	d = 1UL << (sizeof(unsigned long int) * CHAR_BIT - 1);
 	if (num == 0)
 	{
 		printf("0");
