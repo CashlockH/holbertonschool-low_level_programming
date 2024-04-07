@@ -1,9 +1,15 @@
 #include <stdio.h>
 #include "main.h"
 #include <limits.h>
+/**
+ * print_binary - prints decimal in binary
+ * @num: decimal number
+ * Return: nothing
+ */
 void print_binary(unsigned long int num)
 {
-	unsigned long int d = (unsigned long int)1UL << (sizeof(unsigned long int) * CHAR_BIT - 1);
+	unsigned long int d
+	d = 1UL << (sizeof(unsigned long int) * CHAR_BIT - 1);
 	int i = 0;
 
 	if (num == 0)
