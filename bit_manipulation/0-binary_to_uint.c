@@ -9,21 +9,13 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int digit = 0, i = 0, remain = 0, n;
-	while (b[i])
+	int d = 0;
+
+	while (*b)
 	{
-		if (b[i] != '0' && b[i] != '1')
+		if(*b != '0' && *b  != '1')
 		return (0);
-		i++;
+		d = (d << 1) + (*b++ - '0');
 	}
-	n = atoi(b);
-	i = 0;
-	while (n!=0)
-	{
-		digit=n%10;
-		remain+=digit<<i;
-		n=n/10;
-		i++;
-	}
-	return (remain);
+	return (d);
 }
