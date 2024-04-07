@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include "main.h"
 void print_binary(int num)
 {
 	int d = 1 << 10;
