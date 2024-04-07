@@ -5,7 +5,6 @@
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	unsigned int i = 0;
-	dlistint_t *new = malloc(sizeof(dlistint_t));
 	dlistint_t *tmp = *head;
 
 	while (tmp)
