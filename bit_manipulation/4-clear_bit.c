@@ -7,6 +7,7 @@
  * @index: the given index
  * Return: 1
  * On error, -1
+ */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 	long unsigned int d = 1 << index;
