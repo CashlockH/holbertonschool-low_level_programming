@@ -1,3 +1,7 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
 /**
  * insert_dnodeint_at_index - insert node at specified index
  * @idx: index of the new node
