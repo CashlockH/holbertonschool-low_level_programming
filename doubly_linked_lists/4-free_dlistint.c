@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "lists.h"
 #include <string.h>
+#include <stdio.h>
 /**
  * free_dlistint - frees the nodes of the list
  * @head: pointer to the first node of the list
