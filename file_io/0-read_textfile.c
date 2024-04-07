@@ -4,11 +4,13 @@
 #include <sys/stat.h>
 ssize_t read_textfile(const char *filename, size_t letters)
 {
+	int fd, n;
 	char buf[500];
-	int fd = open(filename, O_RDONLY);
+
+	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return -1;
-	size_t n = read(fd, buf, letters);
+	n = read(fd, buf, letters);
 	if (n == -1)
 	{
 		close(fd);
